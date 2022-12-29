@@ -1,5 +1,3 @@
-name: E2E Test with Playwright
-
 on:
   workflows:
     - Deploy to Firebase Hosting on merge
