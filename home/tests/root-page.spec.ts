@@ -6,7 +6,7 @@ test('root page health check', async ({page}) => {
   await expect(page).toHaveURL(/.*autonomy/);
 
   const span = page.locator('span');
-  await expect(span).toHaveText('Autonomy');
+  await expect(span).toHaveText(/Autonomy/);
 
   const el_home = page.locator('text=Home');
   await expect(el_home).toHaveAttribute('href', '/home');
