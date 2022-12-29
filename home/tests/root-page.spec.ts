@@ -18,5 +18,5 @@ test('root page health check', async ({page}) => {
   await expect(el_product).toHaveAttribute('href', '/product');
 
   const el_contribute = page.locator('.contribute');
-  await expect(el_product).toHaveAttribute('href', '/contribute');
+  await expect(el_contribute).toHaveAttribute('href', '/contribute');
 })
