@@ -6,10 +6,11 @@ import { NxWelcomeComponent } from './nx-welcome.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 
 import { MatToolbarModule } from '@angular/material/toolbar';
-
+import { MatTabsModule } from '@angular/material/tabs';
+import { MatIconModule } from '@angular/material/icon';
 @NgModule({
   declarations: [AppComponent, NxWelcomeComponent],
-  imports: [BrowserModule, BrowserAnimationsModule, MatToolbarModule],
+  imports: [BrowserModule, BrowserAnimationsModule, MatToolbarModule, MatTabsModule, MatIconModule],
   providers: [],
   bootstrap: [AppComponent],
 })
