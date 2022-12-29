@@ -1,10 +1,13 @@
+name: E2E Test with Playwright
+
 on:
-  workflows:
-    - Deploy to Firebase Hosting on merge
-  branches:
-    - main
-  types:
-    - completed
+  workflow_run:
+    workflows:
+      - Deploy to Firebase Hosting on merge
+    branches:
+      - main
+    types:
+      - completed
 
 jobs:
   tests_e2e:
