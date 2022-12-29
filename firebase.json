@@ -1,6 +1,5 @@
 {
   "hosting": {
-    "source": "./home/src",
     "public": "./home/dist",
     "ignore": [
       "firebase.json",
