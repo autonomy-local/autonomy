@@ -16,7 +16,7 @@ jobs:
        run: gauge version
      - name: Setup Gaguse
        run: npm ci & gauge install
-       woking-directory: /home/bdd/gauge-tests
+       working-directory: /home/bdd/gauge-tests
      - name: Run Tests
        run: gauge run
        working-directory: ./home/bdd/gauge-tests
