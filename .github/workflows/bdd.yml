@@ -1,0 +1,15 @@
+name: BDD with Gauge
+
+on:
+  push
+
+jobs:
+  gauge-test:
+   name: Run Gauge tests
+   runs-on: ubuntu-latest
+   steps:
+     - uses: actions/checkout@v3
+     - uses: actions/setup-node@v3
+     - name: Install dependencies
+       run: npm install -g @getgauge/cli
+       run: gauge version
