@@ -15,5 +15,5 @@ jobs:
      - name: Check Gauge Version
        run: gauge version
      - name: Run Tests
-       run: gauge run
+       run: npm ci & gauge run
        working-directory: ./home/bdd/gauge-tests
