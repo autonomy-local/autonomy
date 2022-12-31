@@ -14,6 +14,9 @@ jobs:
        run: npm install -g @getgauge/cli
      - name: Check Gauge Version
        run: gauge version
+     - name: Setup Gaguse
+       run: npm ci & gauge install
+       woking-directory: /home/bdd/gauge-tests
      - name: Run Tests
-       run: npm ci & gauge run
+       run: gauge run
        working-directory: ./home/bdd/gauge-tests
