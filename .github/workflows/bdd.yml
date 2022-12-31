@@ -10,6 +10,7 @@ jobs:
    steps:
      - uses: actions/checkout@v3
      - uses: actions/setup-node@v3
+     - uses: GabrielBB/xvfb-action@v1.6
      - name: Install dependencies
        run: npm install -g @getgauge/cli
      - name: Check Gauge Version
