@@ -1,0 +1,17 @@
+name: BDD
+
+on:
+  push
+
+jobs:
+  bdd:
+   name: Run BDD
+   runs-on: ubuntu-latest
+   steps:
+      - uses: actions/checkout@v3
+      - uses: actions/setup-node@v3
+      - name: Install dependencies
+        run: npm install -g @getgauge/cli
+      - name: Check Gauge Version
+        run: gauge version
+     
